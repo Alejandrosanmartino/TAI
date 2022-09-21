@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra TAI</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="assets/img/tai-1.ico">
+  </head>
+  <body>
+    <!-- <div class="contenido"> -->
+    <header>
+      <div class="menu logo-nav">
+        <p class="logo" >T</p>
+        <a href="index.html"  class="logo" > <img src="assets/img/logo3.png"  style="     position: absolute;
+         width: 47px;
+      margin-top: -29px;
+      right: 908px;"> </a> <p class="logo1">I-Tu Amigurumi</p>
+       
+  
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation" >
+          <ul>
+            <li  style="    padding: 0 2rem;"  ><a href="index.html">Principal</a></li>
+            <li  style="    padding: 0 2rem;" ><a href="nosotros.html">Nosotros</a></li>
+            <li  style="    padding: 0 2rem;" ><a href="tuami.html">Tu Ami</a></li>
+            <li style="    padding: 0 2rem;"  ><a href="contacto.html">Contacto</a></li>
+            <!-- <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li> -->
+            <li class="car"><a href="carrito.html" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container-carrito">
+              
+                  <h2>Realizar Compra</h2>
+                  <form id="procesar-pago" action="#" method="POST">
+                      <div class="contenido titulo">
+                          <label for="cliente" class="">Cliente :</label>
+                          <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Ingrese su nombre" onkeypress="return sololetras(event)" onpaste="return false" required>
+                      </div>
+                      <div class="contenido titulo">
+                          <label for="email" class="">Correo :</label>
+                          <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
+                      </div>
+                      <div class="contenido titulo">
+                        <label for="cliente" class="">Teléfono móvil</label>
+                        <input type="text" class="form-control" id="cliente" name="telf" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="contenido titulo">
+                        <label for="cliente" class="">Número de tarjeta</label>
+                        <input type="text" class="form-control" id="cliente" name="tarjeta" minlength="16" maxlength="16" placeholder="Número de tarjeta" required>
+                        <label for="cliente" class="">CVV</label>
+                        <input type="password" class="form-control" id="cliente" name="cvv" minlength="3" maxlength="3"  placeholder="Ingrese el CVV" required>
+                        <label for="cliente" class="">Fecha de caducidad</label>
+                        <input type="text" class="form-control" id="cliente" name="fecha" minlength="7" maxlength="7" autocomplete="new-text" placeholder="Formato 00-0000 /mes-año" required>
+                    </div>
+
+
+                      <div id="carrito" class="contenido">
+                          <table class="tabla" id="lista-compra">
+                              <thead>
+                                  <tr>
+                                      <th scope="col">Imagen</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Precio</th>
+                                      <th scope="col">Cantidad</th>
+                                      <th scope="col">Sub Total</th>
+                                      <th scope="col">Eliminar</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+
+                              </tbody>
+                              <tr>
+                                  <th colspan="4" scope="col" class="" >TOTAL :</th>
+                                  <th scope="col">
+                                      <p id="subtotal"></p>
+                                  </th>
+                              </tr>
+            
+                              
+                          </table>
+                      </div>
+
+                      <div class="" id="loaders">
+                          <img id="cargando" src="assets/img/cargando.gif" width="220">
+                      </div>
+
+                      <div class="botones-envio">
+                              <a href="tuami.html" class="button" id="volver">Seguir comprando</a>
+                              <input type="submit" class="button" id="procesar-compra" onclick="validarCorreo(form.correo.value)"value="Realizar compra">
+                      </div>
+                  </form>
+
+     
+      <footer class="footer-section">
+        <div class="copyright-area" style="background: #202020;
+           padding: 25px 0;
+    max-width: 1000px;
+    margin: 0 auto;">
+          <div class="container-footer">
+            <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2022, todos los derechos reservados <a href="index.html">TAI</a></p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="tuami.html">tuami</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    
+  </div>
+
+
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('ZcZfklNfcSRElXPMK')
+</script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/compra.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </div>
+</body>
+</html>

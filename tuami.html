@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuAmi</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="assets/img/tai-1.ico">
+  </head>
+  <body>
+    <div class="contenido"> 
+    <header>
+      <div class="menu logo-nav">
+        <p class="logo" >T</p>
+        <a href="portada.html"  class="logo" > <img src="assets/img/logo3.png"  style="     position: absolute;
+         width: 47px;
+      margin-top: -29px;
+      right: 908px;"> </a> <p class="logo1">I-Tu Amigurumi</p>
+       
+  
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation" >
+          <ul><li  style="    padding: 0 2rem;"  ><a href="index.html">Principal</a></li>
+            <li  style="    padding: 0 2rem;" ><a href="nosotros.html">Nosotros</a></li>
+            <li  style="    padding: 0 2rem;" ><a href="tuami.html">Tu Ami</a></li>
+            <li style="    padding: 0 2rem;"  ><a href="contacto.html">Contacto</a></li>
+            <!-- <li class="search-icon">
+              <input type="search" placeholder="Search">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li> -->
+            <li class="car" >
+              <svg class="bi bi-cart3" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+              </svg>
+                <div id="carrito" class="dropdown-menu">
+                  <table id="lista-carrito" class="table">
+                      <thead>
+                          <tr>
+                              <th>Imagen</th>
+                              <th>Nombre</th>
+                              <th>Precio</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button-vaciar">Vaciar Carrito</a>
+                  <a href="#" id="procesar-pedido" class="button-pedido">Procesar Compra</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<main>
+
+        <div class="modal" id="modal">
+          <div class="modal-content">
+            <img src="" alt="" class="modal-img" id="modal-img">
+          </div>
+          <div class="modal-boton" id="modal-boton">X</div>
+        </div>
+
+        <div class="container-mascotas" id="lista-productos">
+      
+
+          <div class="card">
+            <img src="assets/img/sirena.jpg" class="card-img" style="      width: 248px;
+            height: 223px;
+            object-fit: cover;">
+            <h5>SIRENA</h5>
+            <p>Sirena TUAMI</p>
+            <p>Precio: <small class="precio">120</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="15">Agregar</a>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/lastrum.jpg" class="card-img" style="     width: 248px;
+            height: 223px;
+            object-fit: cover;">
+            <h5>LASTRUM</h5>
+            <p>Lastrum TUAMI</p>
+            <p>Precio: <small class="precio">150</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="14">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/9_ami.jpg" class="card-img" style="     width: 248px;
+            height: 223px;
+            object-fit: contain;">
+            <h5>DORMILONA</h5>
+            <p>Dormilona TUAMI</p>
+            <p>Precio: <small class="precio">150</small> <small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="13">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/conejita.jpg" class="card-img" style="     width: 248px;
+            height: 223px;
+            object-fit: contain;">
+            <h5>CONEJITA</h5>
+            <p>Conejita TUAMI</p>
+            <p>Precio: <small class="precio">160</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="12">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/pato.jpg" class="card-img" style="        width: 248px;
+            height: 223px;
+            object-fit: cover;">
+            <h5>PATITO</h5>
+            <p>Pato TUAMI</p>
+            <p>Precio: <small class="precio">120</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="11">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/gallo.jpg" class="card-img" style="        width: 248px;
+            height: 223px;
+            object-fit: cover;">
+            <h5>GALLO</h5>
+             <p>Gallo TUAMI</p>
+            <p>Precio: <small class="precio">100</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="10">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/buho.jpg" class="card-img" style="      width: 248px;
+            height: 223px;
+            object-fit: cover;">
+            <h5>BÚHO</h5>
+            <p>Búho TUAMI</p>
+            <p>Precio: <small class="precio">150</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="1">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/11_ami.jpg" style="    width: 248px;
+            height: 223px;
+            object-fit: cover;" class="card-img">
+            <h5>ASTRO</h5>
+            <p>Astro TUAMI</p>
+            <p>Precio: <small class="precio">150</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="2">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/2_ami.jpeg" style="    width: 248px;
+            height: 223px;
+            object-fit: contain;" class="card-img">
+            <h5>TIMER</h5>
+            <p>Timer TUAMI</p>
+            <p>Precio: <small class="precio">160</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="3">Agregar</a>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/3_ami.jpeg"  style="    width: 248px;
+            height: 223px;
+            object-fit: cover;" class="card-img">
+            <h5>OSO</h5>
+             <p>Oso TUAMI</p>
+            <p>Precio: <small class="precio">150</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="4">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/13_ami.jpeg" style="    width: 248px;
+            height: 223px;
+            object-fit: contain;" class="card-img">
+            <h5>MONSTER</h5>
+                <p>Monster TUAMI</p>
+            <p>Precio: <small class="precio">110</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="5">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/14_ami.jpg" style="    width: 248px;
+            height: 223px;
+            object-fit: cover;" class="card-img">
+            <h5>GROGU</h5>
+          
+            <p>Grogu TUAMI</p>
+            <p>Precio: <small class="precio">120</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="6">Agregar</a>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/12_ami.jpeg" style="    width: 248px;
+            height: 223px;
+            object-fit: cover;" class="card-img">
+            <h5>PERRI</h5>
+      
+            <p>Perri TUAMI</p>
+            <p>Precio: <small class="precio">180</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="7">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/6_ami.jpg" style="    width: 248px;
+            height: 223px;
+            object-fit: cover;" class="card-img">
+            <h5>RATI</h5>
+            <p>Rati TUAMI</p>
+            <p>Precio: <small class="precio">100</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="8">Agregar</a>
+          </div>
+          <div class="card">
+            <img src="assets/img/10_ami.jpg" style="    width: 248px;
+            height: 223px;
+            object-fit: contain;" class="card-img">
+            <h5>LEÓN</h5>
+            <p>León TUAMI</p>
+            <p>Precio: <small class="precio">200</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="9">Agregar</a>
+          </div>
+
+
+          <div class="card">
+            <img src="assets/img/8_ami.jpg" style="    width: 248px;
+            height: 223px;
+            object-fit: contain;" class="card-img">
+            <h5>HIPO</h5>
+            <p>Hipo TUAMI</p>
+            <p>Precio: <small class="precio">220</small><small>€</small></p>
+            <a href="#" class="button agregar-carrito" data-id="16">Agregar</a>
+          </div>
+        </div>
+</main>
+  
+
+<footer class="footer-section">
+  <div class="copyright-area">
+      <div class="container-footer">
+          <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                    <p>Copyright &copy; 2022, todos los derechos reservados <a href="index.html">TAI</a></p> 
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                        
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                          <li><a href="nosotros.html">Nosotros</a></li>
+                          <li><a href="mascotas.html">Mascotas</a></li>
+                          <li><a href="contacto.html">Contacto</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/compra.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </div>
+</body>
+</html>
